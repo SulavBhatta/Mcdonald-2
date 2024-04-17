@@ -1,0 +1,181 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  height:100px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px 0px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 0.2vw 6vw;
+}
+
+.nav-part2 {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 1.8vw;
+  padding:0 5vw;
+}
+
+nav h4 {
+  cursor: pointer;
+  font-size: 1.2vw;
+  transition:color 0.1s ease;
+}
+
+.logo{
+  display:flex;
+  align-items: end;
+  padding:0 5vw;
+}
+
+.logo h1{
+  font-size:2vw;
+  font-family:"Merriweather", serif;
+  color:#5a5a5a;
+  cursor:pointer;
+}
+
+.home-text{
+  color:red;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  font-weight:bolder;
+  text-decoration-thickness: 0.2em;
+  border-radius:2px;
+}
+
+nav h4:hover{
+  color:red;
+}
+
+.nav-part2 i{
+  font-size:2vw;
+  display:none;
+}
+
+.body1{
+  padding:5vw ;
+}
+
+.nepal{
+  color:red;
+}
+
+.indian{
+  color:rgb(0, 255, 34);
+}
+
+.information{
+  padding-top:4vw;
+}
+
+.information .recommen-text {
+  font-size:1.5vw;
+  margin-bottom:1vw;
+}
+
+.information .text-1{
+  font-size:1vw;
+  color:gray;
+}
+
+.body1 h1{
+  font-size:4vw;
+  width:60%;
+}
+
+
+main{
+  padding-left:25%;
+  padding-right:25%;
+  gap:2vw;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card1{
+  max-width:19em;
+  background-color:white;
+  box-shadow:rgba(0, 0, 0, 0.2)0 1px 6px 0;
+  padding:1vw;
+  border-radius:15px;
+  cursor:pointer;
+}
+
+.card1 .img-1{
+  max-width:100%;
+}
+
+.card1 .menu-name{
+  font-size:1vw;
+  padding:0;
+}
+
+.card1 .price{
+  padding-top:0.5vw;
+  font-size:1.3vw;
+  font-weight:bold;
+}
+
+.text-deco{
+  text-decoration: none;
+  color:black;
+}
+
+
+@media (max-width:600px){
+  nav{
+    height:50px;
+  }
+
+  .logo h1{
+    font-size:5.5vw;
+  }
+
+  .nav-part2 h4{
+    display:none;
+  }
+
+  .nav-part2 i{
+    display:block;
+    font-size:5vw;
+  }
+
+  .body1 .about-us{
+    padding-top:5vw;
+    width:80%;
+    font-size:6vw;
+  }
+
+  .body1 .recommen-text{
+    font-size:6vw;
+    padding-top:3vw;
+    padding-bottom:2vw;
+  }
+
+  .body1 .text-1{
+    font-size:4vw;
+  }
+
+  .card1 {
+    max-width:30em;
+  }
+
+  .card1 .img-1{
+    max-width:100%;
+  }
+
+  .card1 .menu-namet{
+    font-size:6vw;
+  }
+
+
+  
+} 
